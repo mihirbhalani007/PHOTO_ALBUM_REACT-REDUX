@@ -10,7 +10,9 @@ module.exports = {
           },
         },
       },
-      animation: {},
+      animation: {
+        shimmer: "shimmer 1.5s infinite",
+      },
     },
   },
   plugins: [],
