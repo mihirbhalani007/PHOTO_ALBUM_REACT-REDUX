@@ -1,5 +1,38 @@
 {
-  "users": [{ "id": 1, "name": "Myra" }],
+  "users": [
+    {
+      "id": "1",
+      "name": "Myra"
+    },
+    {
+      "id": "3774",
+      "name": "Jo Hintz Jr."
+    },
+    {
+      "id": "cffb",
+      "name": "Derrick Stark"
+    },
+    {
+      "id": "c2d3",
+      "name": "Jimmie Kohler"
+    },
+    {
+      "id": "623c",
+      "name": "Kim Ziemann Sr."
+    },
+    {
+      "id": "fdd5",
+      "name": "Abel Kuhn"
+    },
+    {
+      "id": "7148",
+      "name": "Marianne Windler"
+    },
+    {
+      "id": "ca0a",
+      "name": "Mrs. Nettie Sanford"
+    }
+  ],
   "albums": [],
   "photos": []
 }
