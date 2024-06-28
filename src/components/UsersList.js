@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { fetchUsers, addUser } from "../store";
+import { fetchUsers, addUser, removeUser } from "../store";
 import Skeleton from "./Skeleton";
 import Button from "./Button";
 import { useThunk } from "../hooks/use-thunk";
+import usersListItem from "./usersListItem";
 
 function UsersList() {
   const [doFetchUsers, isLoadingUsers, loadingUsresErros] =
