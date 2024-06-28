@@ -24,10 +24,8 @@ function UsersList() {
   const [doFetchUsers, isLoadingUsers, loadingUsresErros] =
     useThunk(fetchUsers);
 
-  const [isCreatingUser, setIsCreatingUser] = useState(false);
-  const [creatingUserError, setCreatingUserError] = useState(null);
+  const [doCreateUser, isCreatingUser, creatingUserError] = useThunk(addUser);
 
-  const dispatch = useDispatch();
   const { data } = useSelector((state) => {
     return state.users;
   });
@@ -37,11 +35,7 @@ function UsersList() {
   }, [doFetchUsers]);
 
   const handleUserAdd = () => {
-    setIsCreatingUser(true);
-    dispatch(addUser())
-      .unwrap()
-      .catch((err) => setCreatingUserError(err))
-      .finally(() => setIsCreatingUser(false));
+    doCreateUser();
   };
 
   if (isLoadingUsers) {
