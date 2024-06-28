@@ -11,8 +11,8 @@ function UsersListItem({ user }) {
   };
 
   return (
-    <div className="mb-2 border rounded">
-      <div className="flex flex-row items-center justify-between">
+    <div className="mb-2 border border-gray-300 rounded shadow-md">
+      <div className="flex flex-row items-center justify-between p-2 bg-gray-50 rounded-lg">
         <div className="flex p-2 justify-between items-center cursor-pointer">
           <Button className="mr-3" loading={isLoading} onClick={handleClick}>
             <GoTrashcan />
