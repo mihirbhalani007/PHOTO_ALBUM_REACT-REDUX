@@ -3,11 +3,23 @@
     {
       "id": "d9ff",
       "name": "Ethel Schamberger III"
+    },
+    {
+      "id": "064f",
+      "name": "Ruben Hermiston"
+    },
+    {
+      "id": "f66a",
+      "name": "Esther Bode I"
+    },
+    {
+      "id": "6a74",
+      "name": "Joel Beier"
     }
   ],
   "albums": [
     {
-      "id": 10,
+      "id": "10",
       "title": "Hiking Trip",
       "userId": "d9ff"
     }
