@@ -1,22 +1,16 @@
 {
   "users": [
     {
-      "id": "a2fb",
-      "name": "Myron Wolff"
-    },
-    {
       "id": "d9ff",
       "name": "Ethel Schamberger III"
-    },
-    {
-      "id": "95e8",
-      "name": "Joshua Hansen"
-    },
-    {
-      "id": "7b30",
-      "name": "Antonio Ward"
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip",
+      "userId": "d9ff"
+    }
+  ],
   "photos": []
 }
