@@ -15,13 +15,46 @@
     {
       "id": "6a74",
       "name": "Joel Beier"
+    },
+    {
+      "id": "2e7f",
+      "name": "Randolph Schultz"
+    },
+    {
+      "id": "15ba",
+      "name": "Dr. Angie Schowalter"
     }
   ],
   "albums": [
     {
-      "id": "10",
-      "title": "Hiking Trip",
-      "userId": "d9ff"
+      "id": "6ee9",
+      "userId": "d9ff",
+      "title": "Elegant Rubber Fish"
+    },
+    {
+      "id": "af9e",
+      "userId": "d9ff",
+      "title": "Modern Bronze Car"
+    },
+    {
+      "id": "bfd1",
+      "userId": "d9ff",
+      "title": "Modern Soft Fish"
+    },
+    {
+      "id": "26d7",
+      "userId": "f66a",
+      "title": "Small Concrete Pants"
+    },
+    {
+      "id": "fda0",
+      "userId": "064f",
+      "title": "Gorgeous Cotton Cheese"
+    },
+    {
+      "id": "127d",
+      "userId": "064f",
+      "title": "Ergonomic Cotton Computer"
     }
   ],
   "photos": []

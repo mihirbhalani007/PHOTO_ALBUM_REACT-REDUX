@@ -1,10 +1,18 @@
-import { useFetchAlbumQuery } from "../store/Apis/albumsApi";
+import {
+  useFetchAlbumQuery,
+  useAddAlbumMutation,
+} from "../store/Apis/albumsApi";
 import Skeleton from "./Skeleton";
 import Button from "./Button";
 import ExpandablePanel from "./ExpandablePanel";
 
 function AlbumList({ user }) {
   const { data, error, isLoading } = useFetchAlbumQuery(user);
+  const [addAlbum, results] = useAddAlbumMutation();
+
+  const handleAddAlbum = () => {
+    addAlbum(user);
+  };
 
   let content;
 
@@ -25,7 +33,11 @@ function AlbumList({ user }) {
 
   return (
     <div>
-      <div>ALbums for {user.name}</div>
+      <div>
+        ALbums for {user.name}
+        <Button onClick={handleAddAlbum}> + Add Album</Button>
+      </div>
+
       <div>{content}</div>
     </div>
   );
