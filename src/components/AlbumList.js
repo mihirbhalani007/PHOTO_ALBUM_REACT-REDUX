@@ -17,7 +17,7 @@ function AlbumList({ user }) {
   let content;
 
   if (isLoading) {
-    content = <Skeleton times={5} />;
+    content = <Skeleton className="h-10 w-full" times={5} />;
   } else if (error) {
     content = <div>Error loading albums.</div>;
   } else {
