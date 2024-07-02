@@ -19,6 +19,17 @@ const albumsApi = createApi({
   }),
   endpoints(builder) {
     return {
+      removeAlbum: builder.mutation({
+        invalidatesTags: (result, error, album) => {
+          return [{ type: "Album", id: album.userId }];
+        },
+        query: (album) => {
+          return {
+            url: `/albums/${album.id}`,
+            method: "DELETE",
+          };
+        },
+      }),
       addAlbum: builder.mutation({
         invalidatesTags: (result, error, user) => {
           return [{ type: "album", id: user.id }];
@@ -52,5 +63,9 @@ const albumsApi = createApi({
   },
 });
 
-export const { useFetchAlbumQuery, useAddAlbumMutation } = albumsApi;
+export const {
+  useFetchAlbumQuery,
+  useAddAlbumMutation,
+  useRemoveAlbumMutation,
+} = albumsApi;
 export { albumsApi };
