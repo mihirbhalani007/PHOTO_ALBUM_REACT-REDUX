@@ -5,6 +5,7 @@ import {
 import Skeleton from "./Skeleton";
 import Button from "./Button";
 import ExpandablePanel from "./ExpandablePanel";
+import AlbumsListItem from "./AlbumsListItem";
 
 function AlbumList({ user }) {
   const { data, error, isLoading } = useFetchAlbumQuery(user);
@@ -22,12 +23,7 @@ function AlbumList({ user }) {
     content = <div>Error loading albums.</div>;
   } else {
     content = data.map((album) => {
-      const header = <div>{album.title}</div>;
-      return (
-        <ExpandablePanel key={album.id} header={header}>
-          List of photos of the album
-        </ExpandablePanel>
-      );
+      return <AlbumsListItem key={album.id} album={album} />;
     });
   }
 
